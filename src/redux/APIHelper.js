@@ -1,9 +1,9 @@
-const messageURL = 'http://localhost:3000/api/greetings'
+const messageURL = 'http://localhost:3000/api/greetings';
 
 const getMessage = async () => {
-  const response = await fetch(messageURL)
-  const data = await response.json()
-  return data
-}
+  const response = await fetch(messageURL);
+  const data = await response.json();
+  return data;
+};
 
-export default getMessage
+export default getMessage;

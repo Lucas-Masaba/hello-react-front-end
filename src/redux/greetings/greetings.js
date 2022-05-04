@@ -1,4 +1,4 @@
-import getMessage from "../APIHelper";
+import getMessage from '../APIHelper';
 
 // Constants
 const GET_MESSAGE = 'GET_MESSAGE';
@@ -8,10 +8,10 @@ export const getRandomMessage = () => async (dispatch) => {
   const message = await getMessage();
 
   dispatch({
-    type:GET_MESSAGE,
+    type: GET_MESSAGE,
     payload: message,
-  })
-}
+  });
+};
 
 // Reducers
 const initialState = { message: '' };

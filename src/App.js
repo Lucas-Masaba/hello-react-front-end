@@ -1,11 +1,10 @@
-import React from "react"
+import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 import store from './redux/configureStore';
 
-
-import HelloReactRails from "./HelloReactRails";
+import HelloReactRails from './HelloReactRails';
 
 const App = () => (
   <Provider store={store}>
@@ -17,4 +16,4 @@ const App = () => (
   </Provider>
 );
 
-export default App
+export default App;
